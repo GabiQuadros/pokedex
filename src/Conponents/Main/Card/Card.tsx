@@ -26,7 +26,7 @@ export const Card: React.FC = () => {
           />
           <h4>Trabalho em equipe</h4>
           <h5>Facil convivencia e sempre ajudando os colegas.</h5>
-          <h4>Colocar barra de força</h4>
+          <h5>Colocar barra de força</h5>
         </div>
       </div>
     </React.Fragment>

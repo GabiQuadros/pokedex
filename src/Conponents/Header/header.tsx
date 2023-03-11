@@ -18,11 +18,21 @@ export default function Header() {
         }}
       >
         <Toolbar variant="dense">
-          <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block", marginLeft: "35px" },
+            }}
+          >
             <img src={poke} style={{ width: 100, height: 100 }} />
           </Box>
           <Typography
-            sx={{ flexGrow: 10, fontFamily: "Pokemon", fontSize: "55px" }}
+            sx={{
+              flexGrow: 10,
+              fontFamily: "Pokemon",
+              fontSize: "80px",
+              marginBottom: "20px",
+            }}
             variant="h6"
             color="inherit"
             component="div"

@@ -2,7 +2,7 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import poke from "./Pokemon.png";
+import poke from "../../Assets/Pokemon.png";
 import { Box } from "@mui/material";
 import "../../App.css";
 

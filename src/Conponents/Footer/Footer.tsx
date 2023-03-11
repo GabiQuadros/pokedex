@@ -1,6 +1,6 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import * as React from "react";
-import git from "../Header/github.png";
+import git from "../../Assets/github.png";
 import SendIcon from "@mui/icons-material/Send";
 
 export const Footer: React.FC = () => {

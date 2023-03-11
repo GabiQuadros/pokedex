@@ -19,9 +19,12 @@ export const Grupo: React.FC = () => {
               borderTop: "1px solid rgba(255, 255, 255, 0.5)",
               borderLeft: "1px solid rgba(255, 255, 255, 0.5)",
             }}
-          ></Grid>
-          <Grid item xs={12} className="container">
-            <Card />
+          >
+            <Grid item xs={12} className="container">
+              <Card />
+              <Card />
+              <Card />
+            </Grid>
           </Grid>
         </Container>
       </body>

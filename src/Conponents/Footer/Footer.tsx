@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            <img src={git} style={{ width: 150, height: 15 }} />
+            <img src={git} style={{ width: 150, height: 150 }} />
           </Grid>
           <Grid item xs={8}>
             <Button

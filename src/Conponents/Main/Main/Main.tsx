@@ -1,6 +1,8 @@
 import { Container, Grid } from "@mui/material";
 import Card from "../Card/Card";
 
+//Guilherme está criando essa parte com as fotos e botão para chamar o card, aqui só o teste de como ficaria o card
+
 export const Grupo: React.FC = () => {
   return (
     <>

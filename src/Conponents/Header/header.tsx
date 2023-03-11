@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import poke from "./Pokemon.png";
 import { Box } from "@mui/material";
 import "../../App.css";
-// import "./fonte/PokemonHollow.ttf";
 
 export default function Header() {
   return (

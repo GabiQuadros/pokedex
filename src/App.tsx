@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import { Footer } from "./Conponents/Footer/Footer";
-import Header from "./Conponents/Header/header";
-import { Grupo } from "./Conponents/Main/Main/Main";
+import { Footer } from "./Components/Footer/Footer";
+import Header from "./Components/Header/header";
+import { Grupo } from "./Components/Main/Main/Main";
 
 function App() {
   return (

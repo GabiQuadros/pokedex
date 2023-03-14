@@ -14,7 +14,7 @@ export default function Header() {
         sx={{
           height: "120px",
           justifyContent: "center",
-          backgroundColor: "rgba(7, 7, 7, 0.63)",
+          backgroundColor: "background.paper",
         }}
       >
         <Toolbar variant="dense">

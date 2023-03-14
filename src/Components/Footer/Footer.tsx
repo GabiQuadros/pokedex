@@ -1,13 +1,13 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import * as React from "react";
 import git from "../../Assets/github.png";
-import SendIcon from "@mui/icons-material/Send";
+import ButtonGit from "./ButtonGit";
 
 export const Footer: React.FC = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#292727",
+        backgroundColor: "background.paper",
         height: "200px",
         display: "flex",
         justifyContent: "center",
@@ -19,54 +19,31 @@ export const Footer: React.FC = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            <img src={git} style={{ width: 150, height: 150 }} />
+            <img
+              src={git}
+              alt="git"
+              style={{
+                width: 150,
+                height: 150,
+                color: "background.default",
+              }}
+            />
           </Grid>
           <Grid item xs={8}>
-            <Button
-              variant="outlined"
-              sx={{ color: "black", borderColor: "black" }}
-              endIcon={<SendIcon />}
-              href="https://github.com/GabiQuadros"
-              target="_blank"
-            >
-              Gabriela
-            </Button>
-            <Button
-              variant="outlined"
-              sx={{ color: "black", borderColor: "black" }}
-              endIcon={<SendIcon />}
-              href="https://github.com/Guilherme-Turek"
-              target="_blank"
-            >
-              Guilherme
-            </Button>
-            <Button
-              variant="outlined"
-              sx={{ color: "black", borderColor: "black" }}
-              endIcon={<SendIcon />}
-              href="https://github.com/larissacmoser"
-              target="_blank"
-            >
-              Larissa
-            </Button>
-            <Button
-              variant="outlined"
-              sx={{ color: "black", borderColor: "black" }}
-              endIcon={<SendIcon />}
-              href="https://github.com/anaysfernanda"
-              target="_blank"
-            >
-              Fernanda
-            </Button>
-            <Button
-              variant="outlined"
-              sx={{ color: "black", borderColor: "black" }}
-              endIcon={<SendIcon />}
-              href="https://github.com/cassianosilvaa"
-              target="_blank"
-            >
-              Cassiano
-            </Button>
+            <ButtonGit
+              link="https://github.com/cassianosilvaa"
+              name="Cassiano"
+            />
+            <ButtonGit
+              link="https://github.com/anaysfernanda"
+              name="Fernanda"
+            />
+            <ButtonGit link="https://github.com/larissacmoser" name="Larissa" />
+            <ButtonGit
+              link="https://github.com/Guilherme-Turek"
+              name="Guilherme"
+            />
+            <ButtonGit link="https://github.com/GabiQuadros" name="Gabriela" />
           </Grid>
         </Grid>
       </Box>

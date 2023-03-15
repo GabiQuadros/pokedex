@@ -19,6 +19,7 @@ interface BoxProfileProps {
   src: string;
   textButton: string;
   sx?: {};
+  handleShowSkills(): void;
 }
 
 export const BoxProfileComp: React.FC<BoxProfileProps> = ({
@@ -26,11 +27,12 @@ export const BoxProfileComp: React.FC<BoxProfileProps> = ({
   src,
   sx,
   textButton,
+  handleShowSkills,
 }) => {
   return (
     <BoxProfile>
       <StyledAvatar alt={alt} src={src} sx={sx} />
-      <Button variant="outlined" color="inherit">
+      <Button variant="outlined" color="inherit" onClick={handleShowSkills}>
         {textButton}
       </Button>
     </BoxProfile>

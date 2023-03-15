@@ -13,10 +13,15 @@ import poke4 from "../../../Assets/009.png";
 import poke5 from "../../../Assets/025.png";
 import poke6 from "../../../Assets/027.png";
 import poke7 from "../../../Assets/032.png";
-
-
+import { useState } from "react";
 
 export const Grupo: React.FC = () => {
+  const [showContent, setShowContent] = useState(false);
+
+  const toggleContent = () => {
+    setShowContent(!showContent);
+  };
+
   return (
     <>
       <body className="bodyCard">
@@ -39,17 +44,36 @@ export const Grupo: React.FC = () => {
                 src={larissa}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Larissa"
+                handleShowSkills={toggleContent}
               />
             </Grid>
-            <Grid xs={3} className="container">
-              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card foto={poke2} habilidade="Proatividade" descricao="Participa das aulas ativamente."  />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
-            </Grid>
+            {showContent && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke1}
+                  habilidade="Trabalho em equipe"
+                  descricao="Fácil convivência e sempre ajudando aos colegas."
+                />
+              </Grid>
+            )}
+            {showContent && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke2}
+                  habilidade="Proatividade"
+                  descricao="Participa das aulas ativamente."
+                />
+              </Grid>
+            )}
+            {showContent && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke3}
+                  habilidade="Persistência"
+                  descricao="Firme e forte após o React!"
+                />
+              </Grid>
+            )}
           </Grid>
           <Grid
             container
@@ -69,16 +93,29 @@ export const Grupo: React.FC = () => {
                 src={gabriela}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Gabriela"
+                handleShowSkills={toggleContent}
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
+              <Card
+                foto={poke1}
+                habilidade="Trabalho em equipe"
+                descricao="Fácil convivência e sempre ajudando aos colegas."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!" />
+              <Card
+                foto={poke3}
+                habilidade="Persistência"
+                descricao="Firme e forte após o React!"
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke4} habilidade="Participativa" descricao="Tá sempre ativa nas atividades." />
+              <Card
+                foto={poke4}
+                habilidade="Participativa"
+                descricao="Tá sempre ativa nas atividades."
+              />
             </Grid>
           </Grid>
           <Grid
@@ -99,16 +136,29 @@ export const Grupo: React.FC = () => {
                 src={fernanda}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Fernanda"
+                handleShowSkills={toggleContent}
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas." />
+              <Card
+                foto={poke1}
+                habilidade="Trabalho em equipe"
+                descricao="Fácil convivência e sempre ajudando aos colegas."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke4} habilidade="Participativa" descricao="Tá sempre ativa nas atividades."/>
+              <Card
+                foto={poke4}
+                habilidade="Participativa"
+                descricao="Tá sempre ativa nas atividades."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
+              <Card
+                foto={poke3}
+                habilidade="Persistência"
+                descricao="Firme e forte após o React!"
+              />
             </Grid>
           </Grid>
           <Grid
@@ -129,16 +179,29 @@ export const Grupo: React.FC = () => {
                 src={cassiano}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Cassiano"
+                handleShowSkills={toggleContent}
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
+              <Card
+                foto={poke3}
+                habilidade="Persistência"
+                descricao="Firme e forte após o React!"
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke5} habilidade="Criatividade" descricao="Ideias brilhantes a todo momento."/>
+              <Card
+                foto={poke5}
+                habilidade="Criatividade"
+                descricao="Ideias brilhantes a todo momento."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
+              <Card
+                foto={poke1}
+                habilidade="Trabalho em equipe"
+                descricao="Fácil convivência e sempre ajudando aos colegas."
+              />
             </Grid>
           </Grid>
           <Grid
@@ -159,16 +222,29 @@ export const Grupo: React.FC = () => {
                 src={guilherme}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Guilherme"
+                handleShowSkills={toggleContent}
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke6} habilidade="Prestatividade" descricao="Ama ajudar todo mundo."/>
+              <Card
+                foto={poke6}
+                habilidade="Prestatividade"
+                descricao="Ama ajudar todo mundo."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke7} habilidade="Facilidade em aprender" descricao="O nerd da turma."/>
+              <Card
+                foto={poke7}
+                habilidade="Facilidade em aprender"
+                descricao="O nerd da turma."
+              />
             </Grid>
             <Grid xs={3} className="container">
-              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
+              <Card
+                foto={poke1}
+                habilidade="Trabalho em equipe"
+                descricao="Fácil convivência e sempre ajudando aos colegas."
+              />
             </Grid>
           </Grid>
         </Container>

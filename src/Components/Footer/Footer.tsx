@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <Box
       sx={{
         backgroundColor: "background.paper",
-        height: "200px",
+        height: "100px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -16,20 +16,20 @@ export const Footer: React.FC = () => {
       }}
     >
       {/* Arrumar e cintralizar tudo */}
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 0.5 }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <img
               src={git}
               alt="git"
               style={{
-                width: 150,
-                height: 150,
+                width: 80,
+                height: 80,
                 color: "background.default",
               }}
             />
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={8} sx={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
             <ButtonGit
               link="https://github.com/cassianosilvaa"
               name="Cassiano"

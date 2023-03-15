@@ -37,7 +37,7 @@ export default function Header() {
             color="inherit"
             component="div"
           >
-            Pokedex
+            Growdex
           </Typography>
         </Toolbar>
       </AppBar>

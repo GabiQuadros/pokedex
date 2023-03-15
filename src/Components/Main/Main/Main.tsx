@@ -1,8 +1,20 @@
 import { Container, Grid } from "@mui/material";
 import { BoxProfileComp } from "../../BoxProfileComp";
 import Card from "../Card/Card";
+import larissa from "../../../Assets/larissa.png";
+import gabriela from "../../../Assets/gabriela.png";
+import fernanda from "../../../Assets/fernanda.png";
+import guilherme from "../../../Assets/guilherme.png";
+import cassiano from "../../../Assets/cassiano.png";
+import poke1 from "../../../Assets/002.png";
+import poke2 from "../../../Assets/005.png";
+import poke3 from "../../../Assets/007.png";
+import poke4 from "../../../Assets/009.png";
+import poke5 from "../../../Assets/025.png";
+import poke6 from "../../../Assets/027.png";
+import poke7 from "../../../Assets/032.png";
 
-//Guilherme está criando essa parte com as fotos e botão para chamar o card, aqui só o teste de como ficaria o card
+
 
 export const Grupo: React.FC = () => {
   return (
@@ -24,19 +36,19 @@ export const Grupo: React.FC = () => {
             <Grid item xs={3} className="container">
               <BoxProfileComp
                 alt="Larissa"
-                src="/static/images/avatar/1.jpg"
+                src={larissa}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Larissa"
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke2} habilidade="Proatividade" descricao="Participa das aulas ativamente."  />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
             </Grid>
           </Grid>
           <Grid
@@ -54,19 +66,19 @@ export const Grupo: React.FC = () => {
             <Grid item xs={3} className="container">
               <BoxProfileComp
                 alt="Gabriela"
-                src="/static/images/avatar/1.jpg"
+                src={gabriela}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Gabriela"
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!" />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke4} habilidade="Participativa" descricao="Tá sempre ativa nas atividades." />
             </Grid>
           </Grid>
           <Grid
@@ -84,19 +96,19 @@ export const Grupo: React.FC = () => {
             <Grid item xs={3} className="container">
               <BoxProfileComp
                 alt="Fernanda"
-                src="/static/images/avatar/1.jpg"
+                src={fernanda}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Fernanda"
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas." />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke4} habilidade="Participativa" descricao="Tá sempre ativa nas atividades."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
             </Grid>
           </Grid>
           <Grid
@@ -114,19 +126,19 @@ export const Grupo: React.FC = () => {
             <Grid item xs={3} className="container">
               <BoxProfileComp
                 alt="Cassiano"
-                src="/static/images/avatar/1.jpg"
+                src={cassiano}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Cassiano"
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke3} habilidade="Persistência" descricao="Firme e forte após o React!"/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke5} habilidade="Criatividade" descricao="Ideias brilhantes a todo momento."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
             </Grid>
           </Grid>
           <Grid
@@ -144,19 +156,19 @@ export const Grupo: React.FC = () => {
             <Grid item xs={3} className="container">
               <BoxProfileComp
                 alt="Guilherme"
-                src="/static/images/avatar/1.jpg"
+                src={guilherme}
                 sx={{ width: "200px", height: "200px" }}
                 textButton="Mostrar habilidades da Guilherme"
               />
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke6} habilidade="Prestatividade" descricao="Ama ajudar todo mundo."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke7} habilidade="Facilidade em aprender" descricao="O nerd da turma."/>
             </Grid>
             <Grid xs={3} className="container">
-              <Card />
+              <Card foto={poke1} habilidade="Trabalho em equipe" descricao="Fácil convivência e sempre ajudando aos colegas."/>
             </Grid>
           </Grid>
         </Container>

@@ -5,14 +5,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* className para colocar onde vai ser chamado todos card - testar*/
 .bodyCard {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* className para colocar onde vai ser chamado cada card - testar*/
 .container {
   position: relative;
   display: flex;
@@ -46,10 +44,21 @@
   opacity: 0;
   transition: 0.5s;
 }
-.container .card:hover .content {
+.container .card .content {
   transform: translateY(0px);
   opacity: 1;
+  animation: move 2s ease-in-out;
 }
+
+@keyframes move {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .container .card .content h4 {
   font-size: 1.2em;
   color: #383636;

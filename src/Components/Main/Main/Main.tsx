@@ -13,6 +13,11 @@ import poke4 from "../../../Assets/009.png";
 import poke5 from "../../../Assets/025.png";
 import poke6 from "../../../Assets/027.png";
 import poke7 from "../../../Assets/032.png";
+import status1 from "../../../Assets/16.png";
+import status2 from "../../../Assets/15.png";
+import status3 from "../../../Assets/18.png";
+import status4 from "../../../Assets/19.png";
+import status5 from "../../../Assets/17.png";
 import { useState } from "react";
 
 export const Grupo: React.FC = () => {
@@ -53,6 +58,7 @@ export const Grupo: React.FC = () => {
                   foto={poke1}
                   habilidade="Trabalho em equipe"
                   descricao="Fácil convivência e sempre ajudando aos colegas."
+                  imageStatus={status1}
                 />
               </Grid>
             )}
@@ -62,6 +68,7 @@ export const Grupo: React.FC = () => {
                   foto={poke2}
                   habilidade="Proatividade"
                   descricao="Participa das aulas ativamente."
+                  imageStatus={status5}
                 />
               </Grid>
             )}
@@ -71,6 +78,7 @@ export const Grupo: React.FC = () => {
                   foto={poke3}
                   habilidade="Persistência"
                   descricao="Firme e forte após o React!"
+                  imageStatus={status2}
                 />
               </Grid>
             )}
@@ -101,6 +109,7 @@ export const Grupo: React.FC = () => {
                 foto={poke1}
                 habilidade="Trabalho em equipe"
                 descricao="Fácil convivência e sempre ajudando aos colegas."
+                imageStatus={status1}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -108,6 +117,7 @@ export const Grupo: React.FC = () => {
                 foto={poke3}
                 habilidade="Persistência"
                 descricao="Firme e forte após o React!"
+                imageStatus={status2}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -115,6 +125,7 @@ export const Grupo: React.FC = () => {
                 foto={poke4}
                 habilidade="Participativa"
                 descricao="Tá sempre ativa nas atividades."
+                imageStatus={status3}
               />
             </Grid>
           </Grid>
@@ -144,6 +155,7 @@ export const Grupo: React.FC = () => {
                 foto={poke1}
                 habilidade="Trabalho em equipe"
                 descricao="Fácil convivência e sempre ajudando aos colegas."
+                imageStatus={status1}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -151,6 +163,7 @@ export const Grupo: React.FC = () => {
                 foto={poke4}
                 habilidade="Participativa"
                 descricao="Tá sempre ativa nas atividades."
+                imageStatus={status3}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -158,6 +171,7 @@ export const Grupo: React.FC = () => {
                 foto={poke3}
                 habilidade="Persistência"
                 descricao="Firme e forte após o React!"
+                imageStatus={status2}
               />
             </Grid>
           </Grid>
@@ -187,6 +201,7 @@ export const Grupo: React.FC = () => {
                 foto={poke3}
                 habilidade="Persistência"
                 descricao="Firme e forte após o React!"
+                imageStatus={status2}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -194,6 +209,7 @@ export const Grupo: React.FC = () => {
                 foto={poke5}
                 habilidade="Criatividade"
                 descricao="Ideias brilhantes a todo momento."
+                imageStatus={status4}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -201,6 +217,7 @@ export const Grupo: React.FC = () => {
                 foto={poke1}
                 habilidade="Trabalho em equipe"
                 descricao="Fácil convivência e sempre ajudando aos colegas."
+                imageStatus={status1}
               />
             </Grid>
           </Grid>
@@ -230,6 +247,7 @@ export const Grupo: React.FC = () => {
                 foto={poke6}
                 habilidade="Prestatividade"
                 descricao="Ama ajudar todo mundo."
+                imageStatus={status2}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -237,6 +255,7 @@ export const Grupo: React.FC = () => {
                 foto={poke7}
                 habilidade="Facilidade em aprender"
                 descricao="O nerd da turma."
+                imageStatus={status4}
               />
             </Grid>
             <Grid xs={3} className="container">
@@ -244,6 +263,7 @@ export const Grupo: React.FC = () => {
                 foto={poke1}
                 habilidade="Trabalho em equipe"
                 descricao="Fácil convivência e sempre ajudando aos colegas."
+                imageStatus={status1}
               />
             </Grid>
           </Grid>

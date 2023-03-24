@@ -1,14 +1,15 @@
 import { Grid } from "@mui/material";
 import React, { useState } from "react";
-import { BoxProfileComp } from "./BoxProfileComp";
-import Card from "./Card/Card";
-import guilherme from "../../Assets/guilherme.png";
-import poke1 from "../../Assets/002.png";
-import poke6 from "../../Assets/027.png";
-import poke7 from "../../Assets/032.png";
-import status1 from "../../Assets/16.png";
-import status2 from "../../Assets/15.png";
-import status4 from "../../Assets/19.png";
+import { BoxProfileComp } from "../BoxProfileComp";
+import Card from "../Card/Card";
+import guilherme from "../../../Assets/guilherme.png";
+import poke1 from "../../../Assets/002.png";
+import poke6 from "../../../Assets/027.png";
+import poke7 from "../../../Assets/032.png";
+import status1 from "../../../Assets/16.png";
+import status2 from "../../../Assets/15.png";
+import status4 from "../../../Assets/19.png";
+import CardTeam from "../CardSkill/CardTeam";
 
 const GridSkillsGuilherme: React.FC = () => {
   const [showContentGuilherme, setShowContentGuilherme] = useState(false);
@@ -60,16 +61,7 @@ const GridSkillsGuilherme: React.FC = () => {
             />
           </Grid>
         )}
-        {showContentGuilherme && (
-          <Grid xs={3} className="container">
-            <Card
-              foto={poke1}
-              habilidade="Trabalho em equipe"
-              descricao="Fácil convivência e sempre ajudando aos colegas."
-              imageStatus={status1}
-            />
-          </Grid>
-        )}
+        {showContentGuilherme && <CardTeam />}
       </Grid>
     </React.Fragment>
   );

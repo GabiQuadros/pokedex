@@ -1,10 +1,9 @@
 import { Container } from "@mui/material";
-import { useState } from "react";
-import GridSkillsLarissa from "../GridSkillsLarissa";
-import GridSkillsGabriela from "../GridSkillsGabriela";
-import GridSkillsFernanda from "../GridSkillsFernanda";
-import GridSkillsCassiano from "../GridSkillsCassiano";
-import GridSkillsGuilherme from "../GridSkillsGuilherme";
+import GridSkillsLarissa from "../GridSkills/GridSkillsLarissa";
+import GridSkillsGabriela from "../GridSkills/GridSkillsGabriela";
+import GridSkillsFernanda from "../GridSkills/GridSkillsFernanda";
+import GridSkillsCassiano from "../GridSkills/GridSkillsCassiano";
+import GridSkillsGuilherme from "../GridSkills/GridSkillsGuilherme";
 
 export const Grupo: React.FC = () => {
   return (

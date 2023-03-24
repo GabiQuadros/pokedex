@@ -1,14 +1,14 @@
 import { Grid } from "@mui/material";
 import React, { useState } from "react";
-import { BoxProfileComp } from "./BoxProfileComp";
-import larissa from "../../Assets/larissa.png";
-import Card from "./Card/Card";
-import poke1 from "../../Assets/002.png";
-import poke2 from "../../Assets/005.png";
-import poke3 from "../../Assets/007.png";
-import status1 from "../../Assets/16.png";
-import status2 from "../../Assets/15.png";
-import status5 from "../../Assets/17.png";
+import { BoxProfileComp } from "../BoxProfileComp";
+import larissa from "../../../Assets/larissa.png";
+import Card from "../Card/Card";
+import poke2 from "../../../Assets/005.png";
+import poke3 from "../../../Assets/007.png";
+import status2 from "../../../Assets/15.png";
+import status5 from "../../../Assets/17.png";
+import CardTeam from "../CardSkill/CardTeam";
+import CardPersistence from "../CardSkill/CardPersistence";
 
 const GridSkillsLarissa: React.FC = () => {
   const [showContentLarissa, setShowContentLarissa] = useState(false);
@@ -39,16 +39,7 @@ const GridSkillsLarissa: React.FC = () => {
             handleShowSkills={toggleContentLarissa}
           />
         </Grid>
-        {showContentLarissa && (
-          <Grid xs={3} className="container">
-            <Card
-              foto={poke1}
-              habilidade="Trabalho em equipe"
-              descricao="Fácil convivência e sempre ajudando aos colegas."
-              imageStatus={status1}
-            />
-          </Grid>
-        )}
+        {showContentLarissa && <CardTeam />}
         {showContentLarissa && (
           <Grid xs={3} className="container">
             <Card
@@ -59,16 +50,7 @@ const GridSkillsLarissa: React.FC = () => {
             />
           </Grid>
         )}
-        {showContentLarissa && (
-          <Grid xs={3} className="container">
-            <Card
-              foto={poke3}
-              habilidade="Persistência"
-              descricao="Firme e forte após o React!"
-              imageStatus={status2}
-            />
-          </Grid>
-        )}
+        {showContentLarissa && <CardPersistence />}
       </Grid>
     </>
   );

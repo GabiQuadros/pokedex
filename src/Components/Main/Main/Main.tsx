@@ -21,10 +21,30 @@ import status5 from "../../../Assets/17.png";
 import { useState } from "react";
 
 export const Grupo: React.FC = () => {
-  const [showContent, setShowContent] = useState(false);
+  const [showContentLarissa, setShowContentLarissa] = useState(false);
+  const [showContentGabriela, setShowContentGabriela] = useState(false);
+  const [showContentFernanda, setShowContentFernanda] = useState(false);
+  const [showContentCassiano, setShowContentCassiano] = useState(false);
+  const [showContentGuilherme, setShowContentGuilherme] = useState(false);
 
-  const toggleContent = () => {
-    setShowContent(!showContent);
+  const toggleContentLarissa = () => {
+    setShowContentLarissa(!showContentLarissa);
+  };
+
+  const toggleContentGabriela = () => {
+    setShowContentGabriela(!showContentGabriela);
+  };
+
+  const toggleContentFernanda = () => {
+    setShowContentFernanda(!showContentFernanda);
+  };
+
+  const toggleContentCassiano = () => {
+    setShowContentCassiano(!showContentCassiano);
+  };
+
+  const toggleContentGuilherme = () => {
+    setShowContentGuilherme(!showContentGuilherme);
   };
 
   return (
@@ -47,12 +67,12 @@ export const Grupo: React.FC = () => {
               <BoxProfileComp
                 alt="Larissa"
                 src={larissa}
-                sx={{ width: "200px", height: "200px" }}
+                sx={{ width: "260px", height: "260px" }}
                 textButton="Mostrar habilidades da Larissa"
-                handleShowSkills={toggleContent}
+                handleShowSkills={toggleContentLarissa}
               />
             </Grid>
-            {showContent && (
+            {showContentLarissa && (
               <Grid xs={3} className="container">
                 <Card
                   foto={poke1}
@@ -62,7 +82,7 @@ export const Grupo: React.FC = () => {
                 />
               </Grid>
             )}
-            {showContent && (
+            {showContentLarissa && (
               <Grid xs={3} className="container">
                 <Card
                   foto={poke2}
@@ -72,7 +92,7 @@ export const Grupo: React.FC = () => {
                 />
               </Grid>
             )}
-            {showContent && (
+            {showContentLarissa && (
               <Grid xs={3} className="container">
                 <Card
                   foto={poke3}
@@ -99,35 +119,41 @@ export const Grupo: React.FC = () => {
               <BoxProfileComp
                 alt="Gabriela"
                 src={gabriela}
-                sx={{ width: "200px", height: "200px" }}
+                sx={{ width: "260px", height: "260px" }}
                 textButton="Mostrar habilidades da Gabriela"
-                handleShowSkills={toggleContent}
+                handleShowSkills={toggleContentGabriela}
               />
             </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke1}
-                habilidade="Trabalho em equipe"
-                descricao="Fácil convivência e sempre ajudando aos colegas."
-                imageStatus={status1}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke3}
-                habilidade="Persistência"
-                descricao="Firme e forte após o React!"
-                imageStatus={status2}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke4}
-                habilidade="Participativa"
-                descricao="Tá sempre ativa nas atividades."
-                imageStatus={status3}
-              />
-            </Grid>
+            {showContentGabriela && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke1}
+                  habilidade="Trabalho em equipe"
+                  descricao="Fácil convivência e sempre ajudando aos colegas."
+                  imageStatus={status1}
+                />
+              </Grid>
+            )}
+            {showContentGabriela && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke3}
+                  habilidade="Persistência"
+                  descricao="Firme e forte após o React!"
+                  imageStatus={status2}
+                />
+              </Grid>
+            )}
+            {showContentGabriela && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke4}
+                  habilidade="Participativa"
+                  descricao="Tá sempre ativa nas atividades."
+                  imageStatus={status3}
+                />
+              </Grid>
+            )}
           </Grid>
           <Grid
             container
@@ -145,35 +171,41 @@ export const Grupo: React.FC = () => {
               <BoxProfileComp
                 alt="Fernanda"
                 src={fernanda}
-                sx={{ width: "200px", height: "200px" }}
+                sx={{ width: "260px", height: "260px" }}
                 textButton="Mostrar habilidades da Fernanda"
-                handleShowSkills={toggleContent}
+                handleShowSkills={toggleContentFernanda}
               />
             </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke1}
-                habilidade="Trabalho em equipe"
-                descricao="Fácil convivência e sempre ajudando aos colegas."
-                imageStatus={status1}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke4}
-                habilidade="Participativa"
-                descricao="Tá sempre ativa nas atividades."
-                imageStatus={status3}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke3}
-                habilidade="Persistência"
-                descricao="Firme e forte após o React!"
-                imageStatus={status2}
-              />
-            </Grid>
+            {showContentFernanda && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke1}
+                  habilidade="Trabalho em equipe"
+                  descricao="Fácil convivência e sempre ajudando aos colegas."
+                  imageStatus={status1}
+                />
+              </Grid>
+            )}
+            {showContentFernanda && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke4}
+                  habilidade="Participativa"
+                  descricao="Tá sempre ativa nas atividades."
+                  imageStatus={status3}
+                />
+              </Grid>
+            )}
+            {showContentFernanda && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke3}
+                  habilidade="Persistência"
+                  descricao="Firme e forte após o React!"
+                  imageStatus={status2}
+                />
+              </Grid>
+            )}
           </Grid>
           <Grid
             container
@@ -191,35 +223,41 @@ export const Grupo: React.FC = () => {
               <BoxProfileComp
                 alt="Cassiano"
                 src={cassiano}
-                sx={{ width: "200px", height: "200px" }}
+                sx={{ width: "260px", height: "260px" }}
                 textButton="Mostrar habilidades da Cassiano"
-                handleShowSkills={toggleContent}
+                handleShowSkills={toggleContentCassiano}
               />
             </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke3}
-                habilidade="Persistência"
-                descricao="Firme e forte após o React!"
-                imageStatus={status2}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke5}
-                habilidade="Criatividade"
-                descricao="Ideias brilhantes a todo momento."
-                imageStatus={status4}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke1}
-                habilidade="Trabalho em equipe"
-                descricao="Fácil convivência e sempre ajudando aos colegas."
-                imageStatus={status1}
-              />
-            </Grid>
+            {showContentCassiano && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke3}
+                  habilidade="Persistência"
+                  descricao="Firme e forte após o React!"
+                  imageStatus={status2}
+                />
+              </Grid>
+            )}
+            {showContentCassiano && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke5}
+                  habilidade="Criatividade"
+                  descricao="Ideias brilhantes a todo momento."
+                  imageStatus={status4}
+                />
+              </Grid>
+            )}
+            {showContentCassiano && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke1}
+                  habilidade="Trabalho em equipe"
+                  descricao="Fácil convivência e sempre ajudando aos colegas."
+                  imageStatus={status1}
+                />
+              </Grid>
+            )}
           </Grid>
           <Grid
             container
@@ -237,35 +275,41 @@ export const Grupo: React.FC = () => {
               <BoxProfileComp
                 alt="Guilherme"
                 src={guilherme}
-                sx={{ width: "200px", height: "200px" }}
+                sx={{ width: "260px", height: "260px" }}
                 textButton="Mostrar habilidades da Guilherme"
-                handleShowSkills={toggleContent}
+                handleShowSkills={toggleContentGuilherme}
               />
             </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke6}
-                habilidade="Prestatividade"
-                descricao="Ama ajudar todo mundo."
-                imageStatus={status2}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke7}
-                habilidade="Facilidade em aprender"
-                descricao="O nerd da turma."
-                imageStatus={status4}
-              />
-            </Grid>
-            <Grid xs={3} className="container">
-              <Card
-                foto={poke1}
-                habilidade="Trabalho em equipe"
-                descricao="Fácil convivência e sempre ajudando aos colegas."
-                imageStatus={status1}
-              />
-            </Grid>
+            {showContentGuilherme && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke6}
+                  habilidade="Prestatividade"
+                  descricao="Ama ajudar todo mundo."
+                  imageStatus={status2}
+                />
+              </Grid>
+            )}
+            {showContentGuilherme && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke7}
+                  habilidade="Facilidade em aprender"
+                  descricao="O nerd da turma."
+                  imageStatus={status4}
+                />
+              </Grid>
+            )}
+            {showContentGuilherme && (
+              <Grid xs={3} className="container">
+                <Card
+                  foto={poke1}
+                  habilidade="Trabalho em equipe"
+                  descricao="Fácil convivência e sempre ajudando aos colegas."
+                  imageStatus={status1}
+                />
+              </Grid>
+            )}
           </Grid>
         </Container>
       </body>

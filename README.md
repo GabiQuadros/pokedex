@@ -7,3 +7,5 @@ No modulo de carreiras participamos de uma dinâmica onde deveriamos apontar as 
 Foi proposto pela mentora Carolina, criar uma aplicação onde ela pudesse visualiar as habilidades atribuídas a cada um. Decidimos criar uma aplicação PoKedex em React para realizar a tarefa.
 
 ### `Link para a aplicação`
+
+https://pokedex-rose-alpha.vercel.app/
